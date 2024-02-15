@@ -554,6 +554,10 @@
     .introduction_details>div {
         padding: 30px 40px;
     }
+    
+    #review .pointing_hand {
+        top: 43%;
+    }
 
     #free_guide .sticker {
         right: -6%;

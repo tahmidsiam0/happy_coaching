@@ -1,0 +1,562 @@
+/* =========== Table of Contents =============== 
+1. XXL (max-width: 1400px)
+2. XL (max-width: 1199px)
+3. Large (max-width: 991px)
+4. Medium (max-width: 767px)
+5. Small (max-width: 575px)
+6. XS (max-width: 414px)
+===================== End ===================== */
+
+
+
+
+/* ============ 1. XXL (max-width: 1399px) starts here =============== */
+@media (max-width: 1399px) {
+
+    /* Hero section */
+    #hero .hero_intro {
+        padding: 140px 64px 0 0;
+    }
+
+    .hero_image .img {
+        margin: 100px 0 0 0px;
+    }
+
+    .hero_success_rate {
+        left: -22%;
+    }
+
+    #hero .hero_intro h1 {
+        font-size: 64px;
+    }
+
+    /* Introduction Section */
+
+    .introduction_head {
+        margin-left: 40px;
+    }
+
+    .intro_zigzag {
+        margin-left: 40px;
+    }
+
+    .introduction_head h3 {
+        margin-right: 0px;
+    }
+
+    .introduction_head p {
+        padding-right: 60px;
+    }
+
+    .introduction_details {
+        margin: 16px 40px 70px;
+    }
+
+    #review .pointing_hand {
+        margin-left: 210px;
+    }
+
+
+    /* Review Section */
+    #review .review_title {
+        margin-left: 0px;
+    }
+
+    #review .all_reviews {
+        margin: 37px 0 0 0px;
+        width: auto;
+        gap: 41px;
+    }
+
+    #review .review {
+        width: 339px;
+        padding: 40px;
+    }
+
+    #review .review p {
+        font-size: 18px;
+    }
+
+    #review .review h4 {
+        font-size: 22px;
+        margin: 6px 0;
+    }
+
+
+    /* Blog */
+    #blog .blog_post {
+        width: 346px;
+    }
+
+    #blog .blog_title h3 {
+        padding: 0 250px;
+    }
+
+    /* Free Guide */
+
+    #free_guide .free_guide_image .img {
+        margin: 158px 0 0 28px;
+    }
+
+    #free_guide .free_guide_image .img {
+        margin: 140px 0 0 28px;
+    }
+
+    #free_guide .free_guide_text {
+        margin: 160px 0 0;
+        padding-right: 33px;
+    }
+
+    #free_guide .sticker {
+        top: -7%;
+        right: 14%;
+    }
+}
+/* ============ 1. XXL (max-width: 1399px) ends here =============== */
+
+
+
+
+
+/* ============ 2. XL (max-width: 1199px) starts here =============== */
+@media (max-width: 1199px) {
+
+    /* Hero Section */
+    .hero_intro_head {
+        font-size: 14px;
+    }
+
+    .hero_intro_details {
+        font-size: 15px;
+    }
+
+    .hero_success_rate {
+        width: 207px;
+        height: 94px;
+        left: -21%;
+    }
+
+    #hero .hero_intro {
+        padding: 126px 87px 0 0;
+    }
+
+    #hero .hero_intro h1 {
+        font-size: 55px;
+    }
+
+    #hero .hero_without_image {
+        height: 589px;
+    }
+
+    /* Introduction */
+    .introduction_details .intro_text h4 {
+        font-size: 22px;
+        margin: 26px 0 14px 0;
+    }
+
+    .introduction_details>div {
+        padding: 25px;
+    }
+
+    .introduction_details .intro_text p {
+        font-size: 15px;
+    }
+
+
+    /* Review */
+
+    #review .review p {
+        font-size: 16px;
+    }
+
+    #review .review img {
+        width: 64px;
+    }
+
+    #review .all_reviews {
+        gap: 25px;
+    }
+
+    #review .review {
+        width: 290px;
+        padding: 24px;
+    }
+
+    #review .pointing_hand {
+        margin-left: 190px;
+    }
+
+
+    /* Blog */
+    #blog .blog_details {
+        gap: 20px;
+    }
+
+    #blog .blog_post {
+        width: 293px;
+    }
+
+    #blog .blog_text h4 {
+        font-size: 19px;
+    }
+
+    #blog .blog_text p {
+        font-size: 14px;
+    }
+
+    #blog .blog_text {
+        padding: 20px 23px;
+    }
+
+    #blog .blog_title h3 {
+        padding: 0 180px;
+    }
+
+    /* Free Guide */
+    #free_guide .free_guide_text h3 {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+
+    #free_guide .free_guide_text p {
+        font-size: 16px;
+    }
+
+    #free_guide .free_guide_text p span {
+        font-size: 12px;
+    }
+
+    #free_guide .sticker {
+        top: -9%;
+        right: 13%;
+    }
+
+
+    /* CTA */
+
+    #cta .diff_bg_cta h4 {
+        font-size: 24px;
+    }
+
+    #cta .diff_bg_cta p {
+        font-size: 15px;
+        margin: 15px 0 28px;
+    }
+
+    #cta .diff_bg_cta .cta_text {
+        padding-left: 38px;
+    }
+
+
+    /* Newslatter */
+
+    #newslatter .newslatter .newslatter_text h4 {
+        font-size: 22px;
+    }
+
+    #newslatter .newslatter .newslatter_text p {
+        font-size: 15px;
+        margin-top: 14px;
+    }
+
+
+    /* Footer */
+
+    footer .footer_logo {
+        padding-right: 50px;
+    }
+
+    footer ul li,
+    footer ul li a,
+    footer p {
+        font-size: 12px;
+    }
+
+    footer .footer_logo img {
+        margin-bottom: 18px;
+    }
+}
+/* ============ 2. XL (max-width: 1199px) ends here =============== */
+
+
+
+
+
+/* ============ 3. Large (max-width: 991px) starts here =============== */
+@media (max-width: 991px) {
+
+    /* Header */
+    .nav-item {
+        margin: 12px;
+    }
+
+
+    /* Hero */
+    .hero_svg {
+        top: 4%;
+    }
+
+    #hero .hero_without_image {
+        height: 1130px;
+    }
+
+    .hero_button {
+        text-align: center;
+    }
+
+    #hero .hero_intro {
+        padding: 126px 0 0 0;
+    }
+
+    .hero_image {
+        text-align: center;
+    }
+
+    .hero_image .img {
+        margin: 100px 0 0 0;
+        padding-right: 0;
+    }
+
+    .hero_success_rate {
+        left: 0%;
+    }
+
+    /* Introduction */
+
+    .intro_zigzag,
+    .introduction_head {
+        margin-left: 0;
+    }
+
+    .introduction_head h3 {
+        margin-bottom: 40px;
+    }
+
+    .introduction_head p {
+        padding-right: 0;
+    }
+
+    .introduction_details {
+        margin: 16px 0px 70px;
+    }
+
+    /* Review */
+
+    #review {
+        position: relative;
+    }
+
+    #review .review {
+        width: auto;
+        padding: 33px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #review .pointing_hand {
+        position: absolute;
+        top: 30%;
+        right: 8%;
+        margin-left: 0;
+        transform: rotate(-70deg);
+        -webkit-transform: rotate(-70deg);
+        -moz-transform: rotate(-70deg);
+        -ms-transform: rotate(-70deg);
+        -o-transform: rotate(-70deg);
+    }
+
+    /* Blog */
+    #blog .blog_title h3 {
+        padding: 0;
+    }
+
+
+    /* Free Guide */
+    .free_guide_button {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    #free_guide .free_guide_text {
+        margin: 139px 0 0;
+        padding-right: 0;
+    }
+
+    #free_guide .free_guide_image .img {
+        margin: 140px 0 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    #free_guide .sticker {
+        top: -7%;
+    }
+
+    /* CTA */
+    #cta .diff_bg_cta .cta_text {
+        padding: 20px 0 0 20px;
+    }
+
+    .cta_button {
+        text-align: center;
+    }
+
+    /* Newslatter */
+    #newslatter .newslatter form {
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    #newslatter .newslatter {
+        text-align: center;
+    }
+}
+/* ============ 3. Large (max-width: 991px) ends here =============== */
+
+
+
+
+/* ============= 4. Medium (max-width: 767px) starts here ================ */
+@media (max-width: 767px) {
+
+    /* Hero */
+
+    .hero_svg {
+        top: 3%;
+    }
+
+    .hero_success_rate {
+        left: -16%;
+    }
+
+    #hero .hero_intro {
+        padding: 100px 0 0 0;
+    }
+
+    /* Blog */
+    #blog .blog_title h3 {
+        font-size: 40px;
+    }
+
+    #blog .blog_details {
+        gap: 40px;
+    }
+
+    #blog .blog_post {
+        width: 350px;
+    }
+
+    /* Free Guide */
+    #free_guide .sticker {        
+        right: 0;
+    }
+
+    /* CTA */
+    #cta .diff_bg_cta .cta_text {
+        padding: 0;
+    }
+
+    #cta .diff_bg_cta .cta_text h4,
+    #cta .diff_bg_cta .cta_text p {
+        padding: 20px 0 0 20px;
+    }
+
+    #cta .diff_bg_cta .cta_image img {
+        border-top-left-radius: 24px;
+    }
+
+    /* Footer */
+    footer .footer {
+        gap: 25px;
+    }
+
+}
+
+/* ============= 4. Medium (max-width: 767px) ends here ================ */
+
+
+
+
+
+
+
+/* ============ 5. Small (max-width: 575px) Starts here ============== */
+@media (max-width: 575px) {
+
+    /* Hero section  */
+    #hero .hero_intro {
+        padding-top: 70px;
+    }
+
+    .hero_svg {
+        top: 25px;
+    }
+
+    .hero_success_rate {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    /* Intro section */
+
+    .introduction_details {
+        text-align: center;
+    }
+
+    .introduction_details>div {
+        padding: 30px 120px;
+    }
+
+    /* Review */
+    #review .pointing_hand {
+        top: 39%;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    #review .all_reviews {
+        gap: 40px;
+    }
+
+    #review {
+        padding: 100px 0 119px 0;
+    }
+
+    #review .review_title h3 {
+        font-size: 40px;
+        width: 70%;
+    }
+
+    /* Free Guide */
+    #free_guide .sticker {
+        right: 2%;
+    }
+
+    /* CTA */
+    #cta .diff_bg_cta p {
+        margin: 0px 0 28px;
+    }
+
+    #cta .diff_bg_cta h4 {
+        font-size: 22px;
+    }
+}
+/* ============ 5. Small (max-width: 575px) ends here ============== */
+
+
+
+/* ============= 6. XS (max-width: 414px) starts here ================= */
+@media (max-width: 414px) {
+    .introduction_details>div {
+        padding: 30px 40px;
+    }
+
+    #free_guide .sticker {
+        right: -6%;
+    }
+}
+/* ============= 6. XS (max-width: 414px) ends here ================= */

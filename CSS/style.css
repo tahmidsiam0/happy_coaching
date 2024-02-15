@@ -1,0 +1,732 @@
+/* =========== Table of contents ===========
+1. Common CSS
+2. Header (Logo and navigation gesture belongs here)
+3. Hero section (text, success rate box, image)
+4. Introduction part
+5. Review part (Title, 3 reviews, Pointing Hand)
+6. Blog (Title, 3 blogs, button)
+7. Free Guide section (details with a button, image)
+8. CTA section
+9. Newslatter Section
+10. Footer
+==================    END      =============*/
+
+
+
+/*=============== 1. Common css starts here ==============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Kumbh_sans;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text_color_two);
+}
+
+.container {
+    --bs-gutter-x: 0px;
+    padding: 0 20px;
+}
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row>* {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+:root {
+    --primary_color: #20AD96;
+    --secondary_background_color: #FAF8F6;
+    --text_color_one: #4A556C;
+    --text_color_two: #333461;
+    --text_color_three: #041434;
+}
+
+.primary_button {
+    color: white;
+    background-color: var(--primary_color);
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    border-color: transparent;
+}
+
+.primary_button:hover {
+    background-color: transparent;
+    color: var(--primary_color) !important;
+    border-color: var(--primary_color);
+}
+
+
+@font-face {
+    font-family: Kumbh_sans;
+    src: url(/Font/KumbhSans-VariableFont_YOPQ\,wght.ttf);
+}
+
+@font-face {
+    font-family: Averta_black;
+    src: url(/Font/AvertaStd-Black.ttf);
+}
+
+@font-face {
+    font-family: averta_regular;
+    src: url(/Font/AvertaStd-Regular.ttf);
+}
+
+/* ================ 1. Common CSS ends here =============== */
+
+
+
+
+/* ================ 2. Header starts here ================= */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    animation: sticky_animation 0.3s forwards linear;
+    -webkit-animation: sticky_animation 0.3s forwards linear;
+}
+
+.margin_60px{
+    margin-top: 60px;
+}
+
+@keyframes sticky_animation {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 60px;
+    }
+}
+
+header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+header .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+
+header .logo img {
+    width: 149px;
+    height: 27.41px;
+}
+
+/* 2.1 Nav starts here */
+nav {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+nav .nav_button {
+    font-weight: 600;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-size: 14px;
+    height: 40px;
+    width: 193px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+    margin: 0;
+    color: var(--text_color_one);
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 29px;
+}
+
+/* 2.1 Nav ends here */
+
+/* ================ 2. Header ends here ================= */
+
+
+
+/* ================= 3. Hero section starts here =============== */
+
+#hero .hero_without_image {
+    background-color: var(--secondary_background_color);
+    height: 677px;
+}
+
+#hero .hero_without_image .container{
+    position: relative;
+}
+
+.hero_svg {
+    position: absolute;
+    left: -30px;
+    top: 9%;
+}
+
+/* 3.1 hero intro starts here */
+#hero .hero_intro {
+    padding: 140px 100px 0 0;
+}
+
+.hero_intro_head {
+    color: var(--text_color_one);
+    font-size: 16px;
+    opacity: 40%;
+    margin-bottom: 6px;
+}
+
+#hero .hero_intro h1 {
+    font-weight: 800;
+    font-size: 72px;
+}
+
+.hero_intro_details {
+    color: var(--text_color_one);
+    font-size: 18px;
+    margin: 18px 0;
+    line-height: 28.8px;
+}
+
+#hero .hero_intro button {
+    width: 250px;
+    height: 42px;
+    font-size: 14px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* 3.1 hero intro ends here */
+
+/* 3.2 success rate box starts here */
+
+.hero_success_rate {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 237px;
+    height: 104px;
+    background: white;
+    position: absolute;
+    top: 52px;
+    left: -6%;
+    z-index: 2;
+    box-shadow: 0px 16px 96px 0px #6F7C9029;
+}
+
+.hero_success_rate h4 {
+    font-family: Averta_black;
+    font-size: 24px;
+}
+
+.hero_success_rate p {
+    font-family: averta_regular;
+    font-size: 12px;
+    color: var(--text_color_one);
+}
+
+/* 3.2 success rate box ends here */
+
+/* 3.3 hero image starts here */
+.hero_image {
+    position: relative;
+}
+.hero_image  .img {
+    margin: 100px 0 0 84px;
+    padding-right: 16%;
+}
+
+/* 3.3 hero image ends here */
+
+/* ================= 3. Hero section ends here =============== */
+
+
+
+/* ================== 4. Introduction part starts here =============== */
+#Introduction {
+    position: relative;
+    padding-top: 96px;
+}
+
+.intro_zigzag {
+    margin-left: 70px;
+}
+
+.introduction_head {
+    margin-left: 70px;
+}
+
+.introduction_head h3 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-right: -40px;
+}
+
+.introduction_head p {
+    padding-right: 130px;
+    color: var(--text_color_one);
+    font-size: 17px;
+}
+
+.introduction_details {
+    margin: 16px 70px 70px;
+}
+
+.introduction_details>div {
+    padding: 40px;
+}
+
+.introduction_details .intro_text h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text_color_three);
+    margin: 32px 0 16px 0;
+}
+
+.introduction_details .intro_text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text_color_one);
+}
+
+/* ================== 4. Introduction part ends here =============== */
+
+
+/* ================== 5. Review part starts here =================== */
+#review {
+    background: var(--secondary_background_color);
+    margin-top: 19px;
+    padding: 127px 0 138px 0;
+}
+
+#review .review_title {
+    margin-left: 70px;
+    width: 530px;
+}
+
+#review .all_reviews{
+    margin: 37px 0 0 72px;
+    width: 1426px;
+    gap: 30px;
+}
+
+#review .review_title h3 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+#review .review {
+    width: 400px;
+    background: white;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 96px 96px 0px #B1BAC81F;
+    border: 1px solid #EDEFF5;
+}
+
+#review .second_review {
+    opacity: 85%;
+}
+
+#review .third_review {
+    opacity: 74%;
+}
+
+#review .review p {
+    font-size: 24px;
+    color: var(--text_color_one);
+    font-weight: 400;
+}
+
+#review .review p span {
+    font-weight: 700;
+}
+
+#review .review h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+#review .review img {
+    width: 69px;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+}
+
+#review .review_star{
+    margin-top: 7px;
+}
+
+#review .review_star .fa-star {
+    color: #E0E2E8;
+}
+
+#review .active_review .fa-star {
+    color: #FEC84B;
+}
+
+#review .pointing_hand {
+    margin-left: 320px;
+}
+
+#review .pointing_hand img {
+    width: 74px;
+}
+
+/* ================== 5. Review part ends here =================== */
+
+
+
+
+/* ================== 6. Blog starts here ======================== */
+#blog {
+    text-align: center;
+    padding: 93px 0 98px;
+}
+
+#blog .blog_title h3 {
+    font-weight: 800;
+    font-size: 48px;
+    padding: 0 300px;
+}
+
+#blog .blog_details {
+    justify-content: center;
+    gap: 30px;
+    margin-top: 63px;
+}
+
+#blog .blog_details .blog_img img {
+    width: 356px;
+}
+
+#blog .blog_post {
+    width: 360px;
+    border: 1px solid #EDEFF5;
+}
+
+#blog .blog_text {
+    padding: 24px 28px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#blog .blog_text h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#blog .blog_text p {
+    color: var(--text_color_one);
+    margin-top: 12px;
+}
+
+#blog button {
+    font-size: 14px;
+    height: 42px;
+    width: 250px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 53px;
+}
+
+/* ================== 6. Blog ends here ======================== */
+
+
+
+/* =================== 7. Free Guide section starts here =================== */
+#free_guide {
+    padding-bottom: 139px;
+}
+
+#free_guide .free_guide_text {
+    margin: 204px 0 0 72px;
+}
+
+#free_guide .free_guide_text h3 {
+    font-weight: 800;
+    font-size: 48px;
+    margin-bottom: 22px;
+}
+
+#free_guide .free_guide_text p {
+    font-size: 22px;
+}
+
+#free_guide .free_guide_text p span {
+    font-size: 17px;
+}
+
+#free_guide button {
+    width: 250px;
+    height: 42px;
+    font-size: 14px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 22px;
+}
+
+#free_guide .free_guide_image .img {
+    margin: 158px 0 0 99px;
+    padding-right: 18%;
+    position: relative;
+}
+
+#free_guide .sticker {
+    line-height: 96px;
+    text-align: center;
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    top: -8%;
+    right: 17%;
+    background: var(--primary_color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#free_guide .sticker p {
+    color: white;
+}
+
+
+/* =================== 7. Free Guide section ends here =================== */
+
+
+
+
+/* ===================== 8. CTA section starts here ====================== */
+#cta {
+    margin-bottom: 96px;
+}
+
+#cta .diff_bg_cta {
+    background: var(--secondary_background_color);
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    margin: 0 32px;
+    box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.04);
+}
+
+#cta .diff_bg_cta h4 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+#cta .diff_bg_cta p {
+    font-size: 20px;
+    color: rgba(74, 85, 108, 0.5);
+    margin: 20px 0 35px;
+}
+
+#cta .diff_bg_cta .cta_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 64px;
+}
+
+#cta .diff_bg_cta button {
+    width: 250px;
+    height: 42px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 14px;
+}
+
+#cta .diff_bg_cta .cta_image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 48px;
+}
+
+#cta .diff_bg_cta .cta_image img {
+    border-bottom-right-radius: 24px;
+}
+
+/* ===================== 8. CTA section ends here ====================== */
+
+
+
+
+
+/* ===================== 9. Newslatter Section starts here =========================*/
+#newslatter {
+    background: var(--secondary_background_color);
+}
+
+#newslatter .newslatter {
+    margin: 0 32px;
+    padding: 48px 0;
+}
+
+#newslatter .newslatter .newslatter_text h4 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#newslatter .newslatter .newslatter_text p {
+    font-size: 20px;
+    color: var(--text_color_one);
+    margin-top: 16px;
+}
+
+#newslatter .newslatter form {
+    justify-content: end;
+    display: flex;
+    align-items: center;
+}
+
+#newslatter .newslatter form input {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    height: 44px;
+}
+
+#newslatter .newslatter form input:first-child {
+    width: 280px;
+    padding-left: 15px;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    border: 1px solid rgba(208, 213, 221, 1);
+}
+
+#newslatter .newslatter form input:last-child {
+    width: 150px;
+    margin-left: 16px;
+    font-weight: 500;
+}
+
+
+/* ===================== 9. Newslatter Section starts here =========================*/
+
+
+
+/* ==================== 10. Footer starts here =================== */
+footer .footer {
+    margin: 0 32px;
+    padding: 56px 0;
+}
+
+footer .footer_logo {
+    padding-right: 85px;
+}
+
+footer .footer_logo img {
+    margin-bottom: 32px;
+}
+
+footer ul li,
+footer ul li a,
+footer p {
+    color: rgba(74, 85, 108, 0.5);
+}
+
+footer ul li {
+    margin-bottom: 12px;
+}
+
+.footer_links_contacts ul li {
+    margin-bottom: 16px;
+}
+
+footer h6 {
+    font-weight: 800;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+/* ==================== 10. Footer ends here =================== */

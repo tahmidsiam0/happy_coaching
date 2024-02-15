@@ -104,17 +104,17 @@ h6 {
 
 @font-face {
     font-family: Kumbh_sans;
-    src: url(/Font/KumbhSans-VariableFont_YOPQ\,wght.ttf);
+    src: url(../Font/KumbhSans-VariableFont_YOPQ\,wght.ttf);
 }
 
 @font-face {
     font-family: Averta_black;
-    src: url(/Font/AvertaStd-Black.ttf);
+    src: url(../Font/AvertaStd-Black.ttf);
 }
 
 @font-face {
     font-family: averta_regular;
-    src: url(/Font/AvertaStd-Regular.ttf);
+    src: url(../Font/AvertaStd-Regular.ttf);
 }
 
 /* ================ 1. Common CSS ends here =============== */
